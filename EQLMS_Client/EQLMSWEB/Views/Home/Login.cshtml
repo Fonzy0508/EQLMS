@@ -1,0 +1,135 @@
+﻿@model EQLMS_ICT401.Models.LoginModels
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="loginform formLi MBV-loginform collapse">
+
+    <div class="fntttl LIttl">Log In</div>
+
+    <div class="formsL">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.UserID, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.UserID, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <input type="submit" value="log In" class="LoginRN" />
+            @*<div class="form-group">
+                    <label class="itemttl ">User Id: </label>
+                    <div class="ipt">
+                        <input type="email" class="LIitem" required />
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="itemttl ">Password: </label>
+                    <div class="ipt">
+                        <input type="password" class="LIitem" required />
+                        <hr>
+                    </div>
+                </div>
+            *@
+        }
+        @*<div class="LoginRN">@Html.ActionLink("Continue", "Index", "Home", new { area = "" }, new { @class = "LoginRN", onclick = "loginrn()" })</div>*@
+
+        <div class="Otheroptions">
+            <div class="OPdiv OPfnt">
+                <input type="checkbox" class="Checkbox">
+                <p style="margin:8px 0px; float:left">Remember me?</p>
+            </div>
+            <div class="OPdiv">
+                @Html.ActionLink("Forgot Password?", "Index", "Home", new { area = "" }, new { @class = "OPfnt" })
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="MBV-Slideholder Slideholder">
+    <div class="slidez">
+        <img src="~/Images/Login/Slide2.png" class="slideimg1 slides" alt="pic1">
+        <img src="~/Images/Login/Slide1.png" class="slideimg2 slides" alt="pic 2" />
+        <img src="~/Images/Login/EQLMSSTART.png" class="mainimg slides" alt="pic 3" />
+    </div>
+</div>
+
+<div class="AboutLoginCont AboutLcont Aboutform collapse">
+    <div class="Aboutus">ABOUT US</div>
+    <div class="Aboutcont">
+
+        <div class="Aboutimgcont MBV-Aboutimg">
+            <img src="" class="AImg" />
+        </div>
+
+        <div class="Aboutinfotxt MBV-Abouttxt">
+            <img id="A_edit2" style="right:40px;" class="zy adminview" src="~/Images/AccountPage/pencil.png" onclick="editaboutinfo()" /><!--adminview-->
+            <img id="A_close2" class="zy x" src="~/Images/x.png" onclick="closeedit()" /><!--adminview-->
+            <div id="aboutinfo" class="Abouttxt">
+
+
+            </div>
+            <!--editbuttonclicked Admin-->
+            <textarea placeholder="Enter here" id="aboutinfotxt" class="TAabout" rows="5" cols="50"></textarea>
+        </div>
+
+        <div class="infoscont">
+            <div class="Wcnt">
+                <div class="ATitle">
+                    Location
+                </div>
+            </div>
+
+            <div class="Ainfo">
+                <p id="A_Editloc" class="Location"></p>
+                <input type="text" class="locedit" placeholder="Location" />
+            </div>
+
+        </div>
+
+        <div class="infoscont">
+            <div class="Wcnt">
+                <div class="ATitle">
+                    Contact us
+                </div>
+            </div>
+
+            <div class="Ainfo">
+                <div class="numcont MBV-contact">
+                    <p id="A_telnum" class="contact EC">Telephone: <span class="Telnum"></span></p>
+                </div>
+
+                <div class="numcont MBV-contact">
+                    <p id="A_phonenum" class="contact EC">Phone: <span class="Phonenum"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/jquery.validate.js")
+    @Scripts.Render("~/Scripts/jquery.validate.unobtrusive.js")
+}
+
+
+
+

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<EQLMS_ICT401.Models.Subject>
+
+<div class="MainCont MBV-Maincont">
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {           
+            <div class="Mitem MBV-item">
+                <div class="Subjects">
+                    <p class="Fontforsubj" style="display:none !important;">@Html.DisplayFor(modelItem => item.GradeID)</p>
+                    <p class="Fontforsubj" style="display:none !important;">@Html.DisplayFor(modelItem => item.SubjectID)</p>
+                    <p class="Fontforsubj">@Html.DisplayFor(modelItem => item.SubjectTitle)</p>
+                </div>
+                <div class="subpic">
+                    <img src="@Html.DisplayFor(modelItem => item.SubjectPicture)" class="picsub" />
+                </div>
+                @Html.ActionLink(".", "StudentModules", new { SubjectID = item.SubjectID, SubjectTitle = item.SubjectTitle }, new { @class = "Fontforsubj linkbtn" })
+            </div>
+            
+        };        
+    }else
+    {
+        <h3>There is no Subject assigned to Your Grade level</h3>
+    }
+
+
+</div>
+<div class="rightnav MBV-RN studentview" style="background-color: #27374D; padding:10px;">
+    <h3 class="assh">Assignments</h3>
+    <div class="RnavS">
+        <img src="~/Images/rightnav/asssect.jpg" class="assimg" />
+        <div class="Rnavcont">
+            <div style="float:left; width:50px; height:50px; margin:5px;"></div>
+            <p> Assignment/s: </p>
+            <p class="Assnum"> 0</p>
+        </div>
+    </div>
+    <h3 class="assh">Reminders</h3>
+    <div class="RnavS todo">
+        <img src="~/Images/rightnav/reminder.jpg" class="assimg" />
+        <div class="Rnavcont">
+            <div class="adbutR"><span style="margin:5px;">+</span></div>
+        </div>
+    </div>
+    <div class="RnavS divteach">
+        <div class="teachdiv">
+            <img class="teachimg" src="~/Images/teacher.jpg" />
+            <p class="teachtxt">My Teachers</p>
+        </div>
+    </div>
+    <div class="RnavS divteach">
+        <div class="teachdiv">
+            <img class="teachimg" src="~/Images/rightnav/classmate.jpg" />
+            <p class="teachtxt">My Classmate</p>
+        </div>
+    </div>
+</div>

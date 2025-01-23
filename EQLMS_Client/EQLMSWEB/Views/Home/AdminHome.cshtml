@@ -1,0 +1,56 @@
+﻿@model IEnumerable<EQLMS_ICT401.Models.GradelvlA>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="MainCont MBV-Maincont">
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+
+            <div class="Mitem MBV-item">
+                <div class="Subjects">
+                    <p class="fntttl">@Html.DisplayFor(modelItem => item.Gradelevel)</p>
+                    <p id="Grade" class="fntttl" style="display:none;">@Html.DisplayFor(modelItem => item.GradeID)</p>
+                </div>
+                <div class="subpic">
+                    <img src="~/Images/subj/mapeh.jpg" class="picsub">
+                </div>
+                @Html.ActionLink(".", "Managesubj", new { Gradelvl = item.Gradelevel, Gradeid = item.GradeID }, new { @class = "Fontforsubj linkbtn" })
+            </div>   
+
+        };
+    }
+    else
+    {
+        <h3>there is a problem loading grade levels</h3>
+    }
+    @*<div class="Mitem MBV-item">
+            <div class="Subjects">@Html.ActionLink("Kindergarten 1", "Managesubj", "Gradelvl", new { area = "" }, new { @class = "fntttl" })</div>
+            <div class="subpic">
+                <img src="~/Images/subj/mapeh.jpg" class="picsub">
+            </div>
+        </div>*@
+</div>
+<div style=" background-color: #27374D; padding:10px;" class="rightnav MBV-RN">
+
+    <h3 class="assh">Announcement</h3>
+    <div class="RnavS">
+        <img src="~/Images/rightnav/asssect.jpg" class="assimg" />
+        <div class="Rnavcont">
+            <div class="adbutR"><span style="margin:5px;">+</span></div>
+        </div>
+    </div>
+
+    <a href="@Url.Action("AdminRegAcc", "Admin")">
+        <div class="RnavS accadd">
+            <img src="~/Images/rightnav/reminder.jpg" class="accimg" />
+            <p class="addtit">School Accounts</p>
+        </div>
+        <div class="RnavS accadd">
+            <img src="~/Images/rightnav/reminder.jpg" class="accimg" />
+            <p class="addtit">Admin Accounts</p>
+        </div>
+    </a>
+</div>

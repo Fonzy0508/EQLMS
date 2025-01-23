@@ -1,0 +1,434 @@
+﻿.MainCont {
+    height:auto;    
+    float:left;
+    padding:10px;
+}
+.Mitem {
+    margin: 10px 4.5px 0px 0px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #F7C581;
+    float: left;
+}
+.NRimg {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+.divteachz {
+    margin: 15px 0px 0px 0px;
+    height: 140px;
+    cursor: pointer;
+}
+.teachtxtz {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.AddSection {
+    position:fixed;
+    height:500px;
+    z-index:2;
+    padding:10px;
+    display:none;
+}
+.editsection {
+    position: fixed;
+    height: 500px;
+    z-index: 2;
+    padding: 10px;
+    display: none;
+}
+.adviser {
+    position: fixed;
+    height: 500px;
+    z-index: 2;
+    padding: 10px;
+    display: none;
+}
+.addadviser {
+    width: 98%;
+    background-color: #F7C581;
+    height: 50px;
+    float: left;
+    margin: 1%;
+    border-radius: 20px;
+}
+.adviserimg {
+    width:40px;
+    height:40px;
+    margin:5px;
+    float:left;
+}
+.AdviserName {
+    font-size:15px;
+    font-weight:bold;
+    margin:15px;
+    float:left;
+}
+.Adviseradd {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px;
+    float:left;
+}
+.adviserx {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+.Popupcont {
+    width: 100%;
+    height: 100%;
+    background-color: #27374D;
+    border-radius: 10px;
+}
+/*othercodes*/
+.SectionContainer {
+    background-color: #F7C581;
+    width: 100%;
+    height: 60px;
+    border-radius:10px 10px 0px 0px;
+}
+
+.SContainer {
+    padding: 12px;
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+    color: #27374D;
+}
+.Button1 {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Xbtn {
+    width: 30px;
+    height: 30px;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+.Selectbtm {
+    float: right;
+    margin: 5px;
+    font-size: 15px;
+    font-weight:bold;
+    margin-top: 10px;
+    margin-left: 6px;
+    color: whitesmoke;
+}
+
+.AddSelectbtn {
+    background-color: #27374D;
+    width: 153px;
+    height: 40px;
+    min-width:153px;
+    float: right;
+    margin: 10px;
+    border-radius: 5px;
+}
+.sectionplus {
+    width: 17.5%;
+    background-color: #9DA2A7 ;
+    margin: 5px;
+}
+
+.plusbtn {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.SGConts {
+    background-color: #F7C581;
+    height: auto;
+    float:left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.SectionTitle {
+    float: left;
+    position:relative;
+    width:10%;
+    background-color: darkgray;
+    height: 40px;
+    min-width:90px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size:15px;
+    font-weight:bold;
+    padding:10px;
+}
+
+.rbtn {
+    float: left;
+    margin: 5px 5px 5px 5px !important;
+    padding-top: 5px;
+}
+.Students1 {
+    width: 100%;
+    margin-top: 50px;
+}
+.plusa {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    margin: 15px 15px 0px 15px;
+}
+
+.studentlist {
+    float:left;
+    width:100%;
+    height:auto;
+    padding:10px;
+    overflow-y:auto;
+}
+.STUDShape {
+    height: 60px;
+    float:left;
+    background-color: #F7C581;
+    border-radius: 30px;
+}
+
+.STUDuser {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin:10px 20px;
+}
+
+.STUD1 {
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    color: #27374D;
+}
+
+.STUDCB1 {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin:15px 25px 15px 15px !important;
+}
+.S2title {
+    float:left;
+    width:150px;
+    height:auto;
+    margin:10px;
+}
+.s2img {
+    width:30px;
+    height:30px;
+    margin:10px;
+    float:left;
+}
+.Stxt {
+    font-size:20px;
+    font-weight:bold;
+    margin:10px;
+}
+.Sbtncont {
+    float: right;
+    width: 20%;
+    height: 50px;
+    min-width: 220px;
+    margin: 10px;
+}
+.Xsbtn {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.sbtn {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+}
+.sbtn:hover {
+    width: 25px;
+    height: 25px;
+    margin:10px;
+    transition:0.1s ease-in-out;
+}
+.dropSbtn {
+    transform: rotate(0deg);
+}
+.SXbtn {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.SLtoggle {
+    
+}
+.OL {
+    overflow-y: scroll;
+    height: 418px;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+/*Registrar page*/
+.DDAcc {
+    width: 100%;
+    height: 50px;
+    background-color: #27374D;
+    padding:5px;
+    float:left;
+    margin-top:10px;
+}
+.DDTitle {
+    font-size:18px;
+    color:aliceblue;
+    font-weight:bold;
+    float:left;
+    margin: 10px;
+}
+.DDico {
+    float:right;
+    width:20px;
+    height:20px;
+    margin:10px;
+}
+.PPico {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.DDtbl {
+    width: 100%;
+    height: 450px;
+    background-color: #F7C581;
+    overflow-y:scroll;
+    float:left;
+}
+.PPAccAdd {
+    width: 120px;
+    height: 40px;
+    float: right;
+    background-color: #F7C581;
+    cursor: pointer;
+    border-radius:10px;
+}
+.PPbtnTitle {
+    font-size:16px;
+    font-weight:bold;
+    margin-top:10px;
+}
+.PPAddAccs {
+    position: fixed;
+    height: 500px;
+    z-index: 2;
+    padding: 10px;
+    display: none;
+}
+.blurbg {
+    width:100%;
+    background-color:black;
+    height:100%;
+    opacity:0.1;
+    z-index:1;
+    position:fixed;
+    top:0px;
+    display:none;
+}
+.OLforms {
+    padding:10px;
+}
+.txtfnt {
+    color:aliceblue;
+    font-weight:bold;
+}
+.form-group {
+    height:65px !important;
+}
+.tablex {
+    overflow: scroll;
+    width :100%;
+}
+
+.navleft {
+    width: 350px;
+    height: 500px;
+    background-color: #F7C581;
+    border-radius:10px;
+    float:left;
+    padding:10px;
+}
+.SLogo {
+    width:250px;
+    height:250px;
+    margin:auto;
+    display:block;
+    border-radius:130px;
+}
+.UserDet {
+    width: 300px;
+    height: 100px;
+    display: block;
+    background-color: #27374D;
+    margin: auto;
+    margin-top:50px;
+    border-radius:10px;
+}
+.infodet {
+    font:25px;
+    color:aliceblue;
+    font-weight:bold;
+    text-align:center;
+
+}
+.Containerdet {
+    width:70%;
+    height:520px;
+    float:right;
+    overflow-y:scroll;
+}
+.Linklist {
+    width: 100%;
+    height: 200px;
+    background-color: #27374D;
+    margin-top:10px;
+    border-radius:20px;
+}
+.imagedet {
+    width: 30%;
+    height:100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float:left;
+}
+.Linklistdet {
+    width:69%;
+    height:100%;
+    float:right;
+}

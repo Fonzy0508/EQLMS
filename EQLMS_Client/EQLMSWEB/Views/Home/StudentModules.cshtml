@@ -1,0 +1,95 @@
+﻿@model IEnumerable<EQLMS_ICT401.Models.ModuleModels>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Student Modules";
+}
+<!--Student MO
+    dule-->
+<div>
+    <div class="MainCont MBV-Maincont">
+        <div class="titleM"><p class="Mhead">@Session["Stitle"]</p></div>
+        <div class="ModuleCont">
+            <!--place for modules will be posted-->
+
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <div class="Modules MBV-modules MBV-modules">
+                        <img class="modulelogo" src="~/Images/Modulepage/modulelogo.jpg" />
+                        <p class="Moduletitle">@Html.DisplayFor(modelitem => item.ModuleTitle)</p>
+                    </div>
+                };
+            }
+            else
+            {
+                <h3>There is no Module in this current subject</h3>
+            }
+        </div>
+    </div>
+
+    <div class="rightnav MBV-RN" style="background-color: #27374D; padding:10px;">
+
+
+        <h3 class="assh">Assignments</h3>
+        <div class="RnavS">
+            <img src="~/Images/rightnav/asssect.jpg" class="assimg" />
+            <div class="Rnavcont">
+                <div style="float:left; width:50px; height:50px; margin:5px;"></div>
+                <p> Assigbment/s: </p>
+                <p class="Assnum"> 0</p>
+                <div class="adbutR teacherview"><span style="margin:5px;">+</span></div> <!--teacher view-->
+            </div>
+        </div>
+
+        <div class="RnavS Teacherinfo">
+            <div class="zyy">
+                <img src="~/Images/account.png" class="Teacherimg" />
+
+                <div class="Rnavcont">
+                    <p class="Teachername">Teacher Name</p>
+                    <div class="Teacherposition studentview">
+                        <p class="position">position</p>
+                    </div>
+                    <div style="" class="addteacher adminview">
+                        <div style="position:relative; top:-20px;">
+                            <p style="margin:8px 5px 5px 15px; color:aliceblue; float:left">Add Teacher</p>
+                            <div class="adbutR"><span style="margin-top:10px;">+</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hideMbtn teacherview">
+            <!--Teacher View-->
+            <p class="hidetxt">Hide</p>
+            <img class="hidelogo" src="~/Images/Modulepage/visibility.png">
+        </div>
+    </div>
+</div>
+
+<div class="AddSection Addmodules MBV-popups" ;>
+    <div class="Popupcont">
+        <div class="SectionContainer">
+            <div class="SContainer">Modules</div>
+            <div class="Button1" onclick="XSections()">
+                <span class="Xbtn">X</span>
+            </div>
+
+            <div class="AddSelectbtn">
+                <img class="plusbtn" src="~/Images/add.png" />
+                <p class="Selectbtm">ADD MODULE</p>
+            </div>
+        </div>
+
+        <div class="Mtitlediv">
+            <p class="MtitleT">Title:</p>
+            <input type="text" class="MtitleI" placeholder="Module title">
+        </div>
+
+        <div class="Dropdivcont">
+            <p class="dropheretxt">DROP FILE HERE</p>
+        </div>
+    </div>
+</div>

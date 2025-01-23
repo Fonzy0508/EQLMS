@@ -1,0 +1,105 @@
+﻿@model IEnumerable<EQLMS_ICT401.Models.StudentAccModels>
+
+@{
+    ViewBag.Title = "Account Lists";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="MBV-Maincont-2 MainCont">
+
+    <div style="width:100%;">
+        <h2 style="margin-left:10px; float:left;">Student Accounts</h2>
+        <a href="@Url.Action("CreateStudentAcc", "Admin")">
+            <div class="PPAccAdd SAPP">
+                <img src="~/Images/add.png" class="PPico" />
+                <div class="PPbtnTitle">Student</div>
+            </div>
+        </a>
+    </div>
+    <div class="tablex">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputUserID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputFirstname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputMiddlename)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputLastname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputAge)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputContact)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputPContact)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputGradeLvl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputSection)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputEmail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InputPassword)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputUserID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputFirstname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputMiddlename)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputLastname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputAge)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputContact)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputPContact)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputGradeLvl)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputSection)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InputEmail)
+                    </td>
+                    <td>
+                        @Html.Raw("\u2022\u2022\u2022\u2022\u2022")
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+    

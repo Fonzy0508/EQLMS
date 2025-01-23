@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Account Lists";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="MBV-Maincont-2 MainCont">
+
+    <div class="navleft">
+        <img class="SLogo" alt="School Logo" src="~/Images/logo_ELMS.jpg" />
+        <div class="UserDet">
+            <p class="infodet" style="padding-top:25px;">@Session["ActiveName"].ToString()</p>
+            <center><hr style="width:80%;" /></center>
+            <p class="infodet">Admin</p>
+        </div>
+    </div>
+
+    <div class="Containerdet">
+
+        <a href="@Url.Action("ViewStudents", "Admin")">
+            <div class="Linklist">
+                <img class="imagedet" src="~/Images/student.jpg" />
+
+                <div class="Linklistdet">
+                    <h3 class="txtfnt">Student Accounts</h3><hr />
+                    <ul style="margin-top:25px;">
+                        <li class="txtfnt">View the current student accounts</li>
+                        <li class="txtfnt">Add new Student Accounts</li>
+                        <li class="txtfnt">Reset Password</li>
+                        <li class="txtfnt">Edit or Remove Student Accounts</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+
+        <a href="@Url.Action("ViewTeachers", "Admin")">
+            <div class="Linklist">
+                <img class="imagedet" src="~/Images/teacher1.jpg" />
+                <div class="Linklistdet">
+                    <h3 class="txtfnt">Teacher Accounts</h3><hr />
+                    <ul style="margin-top:25px;">
+                        <li class="txtfnt">View the current Teacher accounts</li>
+                        <li class="txtfnt">Add new Teacher Accounts</li>
+                        <li class="txtfnt">Reset Password</li>
+                        <li class="txtfnt">Edit or Remove Teacher Accounts</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+        
+
+        <a href="@Url.Action("ViewRegistrar", "Admin")">
+            <div class="Linklist">
+                <img class="imagedet" src="~/Images/registrar.jpg" />
+                <div class="Linklistdet">
+                    <h3 class="txtfnt">Registrar Accounts</h3><hr />
+                    <ul style="margin-top:25px;">
+                        <li class="txtfnt">View the current Registrar accounts</li>
+                        <li class="txtfnt">Add new Registrar Accounts</li>
+                        <li class="txtfnt">Reset Password</li>
+                        <li class="txtfnt">Edit or Remove Registrar Accounts</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+
+        <a href="@Url.Action("ViewAdmin", "Admin")">
+            <div class="Linklist">
+                <img class="imagedet" src="~/Images/admin.jpg" />
+                <div class="Linklistdet">
+                    <h3 class="txtfnt">Admin Accounts</h3><hr />
+                    <ul style="margin-top:25px;">
+                        <li class="txtfnt">View the current Admin accounts</li>
+                        <li class="txtfnt">Add new Admin Accounts</li>
+                        <li class="txtfnt">Reset Password</li>
+                        <li class="txtfnt">Edit or Remove Admin Accounts</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</div>

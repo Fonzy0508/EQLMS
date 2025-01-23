@@ -1,0 +1,69 @@
+﻿@model IEnumerable<EQLMS_ICT401.Models.loggedinUserModels>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="backgroundAcc MBV-Maincont-2">
+    <div class="Profilepictureholder">
+        <img class="ProfilePic" src="~/Images/account.png" />
+    </div>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <div class="AccInfos">
+                <div class="Gradeinfo">
+                    <div class="Username basicinfo">
+
+                        <p class="infotxt usernametxt">@Session["UserName"]</p>
+
+
+                    </div>
+                    <div class="Gradelvl basicinfo">
+                        <p class="infotxt Gradelvltxt">Registrar <span>@Html.DisplayFor(modelItem => item.ActiveAccId)</span></p>
+                    </div>
+                    <div class="section basicinfo">
+                        <p class="infotxt Sectiontxt">User @Html.DisplayFor(modelItem => item.ActiveUserId)</p>
+                    </div>
+                </div>
+
+                <div class="divinfo Emailinfo MBV-divinfo EM">
+                    <div class="editinfo"></div>
+                    <div class="titleinfo">Email Address</div>
+                    <div class="Gmail infohere">@Html.DisplayFor(modelItem => item.ActiveEmail)</div>
+                </div>
+
+                <div class="divinfo AddressInfo MBV-divinfo">
+                    <div class="editinfo">
+                        <img class="editicon" src="~/Images/Accountpage/pencil.png" />
+                    </div>
+                    <div class="titleinfo">Address</div>
+                    <div class="address infohere">@Html.DisplayFor(modelItem => item.ActiveAddress)</div>
+                </div>
+
+                <div class="divinfo ContactInfo MBV-divinfo">
+                    <div class="editinfo">
+                        <img class="editicon" src="~/Images/Accountpage/pencil.png" />
+                    </div>
+                    <div class="titleinfo">Contact Number</div>
+                    <div class="Contact infohere">@Html.DisplayFor(modelItem => item.ActiveCnumber)</div>
+                </div>
+
+            </div>
+
+        };
+    }
+    else
+    {
+        <h3>There is no Subject assigned to Your Grade level</h3>
+    }
+
+    <div class="divinfo ChangePassword PW">
+        <img class="passcon" src="~/Images/Accountpage/pencil.png" />
+        <div class="titleinfo pass">Password</div>
+    </div>
+
+</div>
+
+
+
+

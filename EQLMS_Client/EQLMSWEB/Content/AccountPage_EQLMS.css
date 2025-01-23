@@ -1,0 +1,100 @@
+﻿.backgroundAcc {
+    width: 100%;
+    height: 100%;
+    background-color: #F7C581;
+}
+.AccInfos {
+    width: 100%;
+    height: auto;
+    padding:10px;
+    float:left;
+    background-color: #27374D;
+
+}
+.Profilepictureholder {
+    width:100%;
+    height:200px;
+    position:relative;
+    z-index:2;
+}
+.ProfilePic {
+    width: 200px;
+    height: 200px;
+    float:right;
+}
+.basicinfo {
+    width: 350px;
+    height: 50px;
+    background-color: #27374D;
+    margin-top: 10px;
+    position: relative;
+    top: -61px;
+}
+.Username {
+    background-color: #F7C581;
+    margin-top:0px;
+}
+.Gradelvl {
+    height:20px;
+}
+.infotxt {
+    font-size:23px;
+    font-weight:bold;
+}
+.usernametxt {
+    color: #27374D;
+    font-weight: bolder;
+    font-size:40px;
+}
+.Gradelvltxt {
+    color: #F7C581;
+}
+.Sectiontxt {
+    color: #F7C581;
+    margin-left:10px;
+}
+.divinfo {
+    float: left;
+    width: 250px;
+    height: 150px;
+    background-color: red;
+    background-color: #F7C581;
+    border-radius:15px;
+    cursor:pointer;
+}
+.Emailinfo {
+    cursor: pointer !important;
+}
+.ChangePassword {
+    position: absolute;
+    right: 30px;
+    top: 220px;
+    width:250px;
+    height: 80px;
+}
+.editicon {
+    width:20px;
+    height:20px;
+    margin:15px 15px 5px 5px;
+    position:relative;
+    left:210px;
+}
+.editinfo {
+    width:100%;
+    height:30px;
+}
+.titleinfo {
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
+.pass {
+    float: left;
+    margin:25px 25px 25px 80px;
+}
+.passcon {
+    width: 20px;
+    height: 20px;
+    margin: 15px 15px 5px 5px;
+    float: right;
+}

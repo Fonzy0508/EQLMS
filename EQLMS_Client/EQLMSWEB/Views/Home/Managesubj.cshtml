@@ -1,0 +1,245 @@
+﻿@model IEnumerable<EQLMS_ICT401.Models.Subject>
+@{
+    ViewBag.Title = "Manage Subjects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="MainCont MBV-Maincont">
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <div class="Mitem MBV-item">
+                <div class="Subjects">
+                    <p class="Fontforsubj" style="display:none !important;">@Html.DisplayFor(modelItem => item.GradeID)</p>
+                    <p class="Fontforsubj" style="display:none !important;">@Html.DisplayFor(modelItem => item.SubjectID)</p>
+                    <p class="Fontforsubj" style="display:none !important;">@Html.DisplayFor(modelItem => item.UserID)</p>
+                    <p class="Fontforsubj">@Html.DisplayFor(modelItem => item.SubjectTitle)</p>
+                </div>
+                <div class="subpic">
+                    <img src="@Html.DisplayFor(modelItem => item.SubjectPicture)" class="picsub" />
+                </div>
+                @Html.ActionLink(".", "AdminModules", new { SubjectID = item.SubjectID, SubjectTitle = item.SubjectTitle }, new { @class = "Fontforsubj linkbtn" })
+            </div>
+
+        };
+    }
+    else
+    {
+        <h3>There is no Subject assigned to Your Grade level</h3>
+    }
+   
+</div>
+
+<div class="rightnav MBV-RN" style="background-color: #27374D; padding:10px;">
+    <div class="RnavS divteachz" onclick="Sections()">
+        <div class="teachdiv">
+            <img class="NRimg" src="~/Images/teacher.jpg" />
+            <p class="teachtxtz">Sections</p>
+        </div>
+    </div>
+    <div class="RnavS divteachz" onclick="ESections()">
+        <div class="teachdiv">
+            <img class="NRimg" src="~/Images/teacher.jpg" />
+            <p class="teachtxtz">Student</p>
+        </div>
+    </div>
+    <div class="RnavS divteachz" onclick="Adviser()">
+        <div class="teachdiv">
+            <img class="NRimg" src="~/Images/rightnav/classmate.jpg" />
+            <p class="teachtxtz">Adviser</p>
+        </div>
+    </div>
+</div>
+
+<div class="AddSection MBV-popups">
+    <div class="Popupcont">
+        <div class="SectionContainer">
+            <div class="SContainer">Section</div>
+            <div class="Button1" onclick="XSections()">
+                <span class="Xbtn">X</span>
+            </div>
+
+            <div class="AddSelectbtn2">
+                <img class="plusbtn" src="~/Images/add.png" />
+                <p class="Selectbtm">ADD SELECTABLE</p>
+            </div>
+        </div>
+
+        <div class="SGConts">
+            <!--section posted-->
+            <div class="SectionTitle">
+                <p style="float:left; margin-right:3px;">S1 G4</p>
+                <input class="rbtn" type="radio" />
+            </div>
+
+            <div class="SectionTitle">
+                <p style="float:left;  margin-right:3px;">S2 G4</p>
+                <input class="rbtn" type="radio" />
+            </div>
+
+            <div class="AddSelectbtn sectionplus">
+                <img class="plusbtn" src="~/Images/add.png" />
+                <p class="Selectbtm" ng- style="color:black;">ADD SECTION</p>
+            </div>
+        </div>
+
+        <div class="studentlist">
+            <!--student list selectable-->
+            <div class="STUDShape MBV-studentlist">
+                <img class="STUDuser" src="~/Images/Popups/users.png" />
+                <p class="STUD1">Student Name</p>
+                <input class="STUDCB1" type="checkbox" />
+            </div>
+            <div class="STUDShape MBV-studentlist">
+                <img class="STUDuser" src="~/Images/Popups/users.png" />
+                <p class="STUD1">Student Name</p>
+                <input class="STUDCB1" type="checkbox" />
+            </div>
+            <div class="STUDShape MBV-studentlist">
+                <img class="STUDuser" src="~/Images/Popups/users.png" />
+                <p class="STUD1">Student Name</p>
+                <input class="STUDCB1" type="checkbox" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="editsection  MBV-popups">
+    <div class="Popupcont">
+
+        <div class="SectionContainer">
+            <div class="SContainer">Section</div>
+            <div class="Button1" onclick="XSections()">
+                <span class="Xbtn" onclick="XSections()">X</span>
+            </div>
+        </div>
+
+        <div class="OL">
+            <!-- section will be posted here--->
+            <div class="SGConts">
+                <div class="S2title">
+                    <img class="s2img" src="/Images/Popups/Section.png" />
+                    <p class="Stxt">Section 1</p>
+                </div>
+
+                <div class="Sbtncont">
+                    <div class="Xsbtn">X</div>
+                    <img class="EditSbtn sbtn" src="/Images/Accountpage/pencil.png" />
+                    <img src="/Images/Popups/down.png" class="dropSbtn sbtn" onclick="rotatezy()" data-toggle="collapse" data-target=".SLtoggle" />
+                </div>
+            </div>
+
+            <div class="studentlist SLtoggle collapse" aria-expanded="false">
+                <!--student list selectable-->
+                <div class="STUDShape MBV-studentlist">
+                    <img class="STUDuser" src="~/Images/Popups/users.png" />
+                    <p class="STUD1">Student Name</p>
+                    <div class="SXbtn">X</div>
+                </div>
+                <div class="STUDShape MBV-studentlist">
+                    <img class="STUDuser" src="~/Images/Popups/users.png" />
+                    <p class="STUD1">Student Name</p>
+                    <div class="SXbtn">X</div>
+                </div>
+                <div class="STUDShape MBV-studentlist">
+                    <img class="STUDuser" src="~/Images/Popups/users.png" />
+                    <p class="STUD1">Student Name</p>
+                    <div class="SXbtn">X</div>
+                </div>
+            </div>
+
+            <div class="SGConts">
+
+                <div class="S2title">
+                    <img class="s2img" src="~/Images/Popups/section.png" />
+                    <p class="Stxt">Section 2</p>
+                </div>
+
+                <div class="Sbtncont">
+                    <div class="Xsbtn">X</div>
+                    <img class="EditSbtn sbtn" src="~/Images/Accountpage/pencil.png" />
+                    <img src="~/Images/Popups/down.png" class="dropSbtn sbtn" data-toggle="collapse" data-target=".SLtoggle2" />
+                </div>
+
+            </div>
+
+            <div class="studentlist collapse SLtoggle2" aria-expanded="false">
+                <!--student list selectable-->
+                <div class="STUDShape MBV-studentlist">
+                    <img class="STUDuser" src="~/Images/Popups/users.png" />
+                    <p class="STUD1">Student Name</p>
+                    <div class="SXbtn">X</div>
+                </div>
+                <div class="STUDShape MBV-studentlist">
+                    <img class="STUDuser" src="~/Images/Popups/users.png" />
+                    <p class="STUD1">Student Name</p>
+                    <div class="SXbtn">X</div>
+                </div>
+                <div class="STUDShape MBV-studentlist">
+                    <img class="STUDuser" src="~/Images/Popups/users.png" />
+                    <p class="STUD1">Student Name</p>
+                    <div class="SXbtn">X</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="adviser MBV-popups">
+
+    <div class="Popupcont">
+        <div class="SectionContainer">
+            <div class="SContainer">Adviser</div>
+            <div class="Button1" onclick="XSections()">
+                <span class="Xbtn" onclick="XSections()">X</span>
+            </div>
+        </div>
+
+        <div class="OL">
+            <!-- section will be posted here--->
+            <div class="SGConts">
+
+                <div class="S2title">
+                    <img class="s2img" src="/Images/Popups/Section.png">
+                    <p class="Stxt">Section 1</p>
+                </div>
+
+                <div class="Sbtncont">
+                    <div class="Xsbtn">X</div>
+                    <img class="EditSbtn sbtn" src="/Images/Accountpage/pencil.png" />
+                    <img src="/Images/Popups/down.png" class="dropSbtn sbtn" data-toggle="collapse" data-target=".S1A" />
+                </div>
+
+            </div>
+
+            <div class="addadviser collapse S1A" aria-expanded="false">
+                <img class="adviserimg" src="/Images/Popups/users.png" />
+                <div class="AdviserName">Adviser Name</div>
+                <div class="adviserx">X</div>
+            </div>
+
+
+            <div class="SGConts">
+
+                <div class="S2title">
+                    <img class="s2img" src="/Images/Popups/Section.png" />
+                    <p class="Stxt">Section 2</p>
+                </div>
+
+                <div class="Sbtncont">
+                    <div class="adviserx">X</div>
+                    <img class="EditSbtn sbtn" src="/Images/Accountpage/pencil.png" />
+                    <img src="/Images/Popups/down.png" class="dropSbtn sbtn" data-toggle="collapse" data-target=".S2A" />
+                </div>
+            </div>
+
+            <div class="addadviser collapse S2A" aria-expanded="false">
+                <img class="adviserimg" src="/Images/Popups/users.png" />
+                <img src="/Images/add.png" class="plusa">
+                <div class="Adviseradd">Add Adviser</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

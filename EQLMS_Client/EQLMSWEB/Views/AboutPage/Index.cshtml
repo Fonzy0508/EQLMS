@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "About";
+}
+<div class="BDY">
+    <div class="AboutMaindiv MBV-Maincont-2 aboutsz">
+        <div class="Aboutus">ABOUT US</div>
+        <div class="Aboutcont">
+
+            <div class="Aboutimgcont MBV-Aboutimg">
+                <img src="" class="AImg" />
+            </div>
+
+            <div class="Aboutinfotxt MBV-Abouttxt">
+                <img id="A_edit2" style="right:40px;" class="zy adminview" src="~/Images/AccountPage/pencil.png" onclick="editaboutinfo()" /><!--adminview-->
+                <img id="A_close2" class="zy x" src="~/Images/x.png" onclick="closeedit()" /><!--adminview-->
+                <div id="aboutinfo" class="Abouttxt">
+
+
+                </div>
+                <!--editbuttonclicked Admin-->
+                <textarea placeholder="Enter here" id="aboutinfotxt" class="TAabout" rows="5" cols="50"></textarea>
+            </div>
+        </div>
+
+        <div class="infoscont">
+            <div class="Wcnt">
+                <div class="ATitle">
+                    Location
+                </div>
+                <img class="zy adminview" src="~/Images/AccountPage/pencil.png" onclick="editloc()" /><!--adminview-->
+                <img id="A_close3" class="zy x" src="~/Images/x.png" onclick="closeedit()" /><!--adminview-->
+            </div>
+
+            <div class="Ainfo">
+                <p id="A_Editloc" class="Location"></p>
+                <input type="text" class="locedit" placeholder="Location" />
+            </div>
+            
+        </div>
+
+        <div class="infoscont">
+            <div class="Wcnt">
+                <div class="ATitle">
+                    Contact us
+                </div>
+                <img id="A_edit" class="zy adminview" src="~/Images/AccountPage/pencil.png" onclick="EditNum()" /><!--adminview-->
+                <img id="A_close" class="zy x" src="~/Images/x.png" onclick="closeedit()" /><!--adminview-->
+            </div>
+
+            <div class="Ainfo">
+                <div class="numcont MBV-contact">
+                    <p id="A_telnum" class="contact EC">Telephone: <span class="Telnum"></span></p>
+                    <div id="A_edittel" class="Teledit">
+                        <p class="contactz">Telephone:</p>
+                        <input type="number" class="Teltxt" />
+                    </div>
+                </div>
+
+                <div class="numcont MBV-contact">
+                    <p id="A_phonenum" class="contact EC">Phone: <span class="Phonenum"></span></p>
+                    <div id="A_editphone" class="Teledit">
+                        <p class="contactz">Phone:</p>
+                        <input type="number" class="Teltxt" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

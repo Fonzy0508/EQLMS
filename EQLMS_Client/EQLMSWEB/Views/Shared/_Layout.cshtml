@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/EQLMS_MainPage.css")
+    @Styles.Render("~/Content/StudentAcc_EQLMS.css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/AccountPage_EQLMS.css")
+    @Styles.Render("~/Content/AboutPage_EQLMS.css")
+    @Styles.Render("~/Content/SchedulePage_EQLMS.css")
+    @Styles.Render("~/Content/AGradeLvl.css")
+    @Styles.Render("~/Content/Teacher.css")
+    <link href="~/Content/EQLMS_MainPage.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="blurbg"></div>
+    <p style="display:none;" id="tle">@ViewBag.Title</p>
+    <p style="display:none;" id="tlezy"></p>
+    <div class="EQLMSnav">
+        <div class="Login">
+            <div class="profilebutton eqlmsbuts">
+
+                <a href="@Url.Action("StudentAccPage", "Accountpage")" id="SAP" class="LiS NLr"><img src="~/Images/account.png" class="profpic" alt="" /></a>
+                <a href="@Url.Action("AdminAccPage", "AccountPage")" id="AAP" class="LiA NLr"><img src="~/Images/account.png" class="profpic" alt="" /></a>
+                <a href="@Url.Action("TeacherAccPage", "AccountPage")" id="TAP" class="LiT NLr"><img src="~/Images/account.png" class="profpic" alt="" /></a>
+                <a href="@Url.Action("RegistrarAccPage", "AccountPage")" id="TAR" class="LiR NLr"><img src="~/Images/account.png" class="profpic" alt="" /></a>
+                @if (Session["ActiveName"] != null)
+                {
+                    <a href="@Url.Action("StudentAccPage", "AccountPage")" id="SAP" class="LiS NLr"><span class="nameacc">@Session["ActiveName"].ToString()</span></a>
+                    <a href="@Url.Action("AdminAccPage", "AccountPage")" id="AAP" class="LiA NLr"><span class="nameacc">@Session["ActiveName"].ToString()</span></a>
+                    <a href="@Url.Action("TeacherAccPage", "AccountPage")" id="TAP" class="LiT NLr"><span class="nameacc">@Session["ActiveName"].ToString()</span></a>
+                    <a href="@Url.Action("RegistrarAccPage", "AccountPage")" id="TAR" class="LiR NLr"><span class="nameacc">@Session["ActiveName"].ToString()</span></a>
+                }
+            </div>
+            <div class="addbutt eqlmsbuts">
+                <div class="xtraButton LiS"> <a href="@Url.Action("ScheduleStudent","Schedule")"> <img src="~/Images/schedbtn.jpg" class="buttimg" /></a> </div>
+                <div class="xtraButton LiT"> <a href="@Url.Action("ScheduleTeacher","Schedule")"> <img src="~/Images/schedbtn.jpg" class="buttimg" /></a> </div>
+                <div class="xtraButton LiA"> <a href="@Url.Action("ScheduleAdmin","Schedule")"> <img src="~/Images/schedbtn.jpg" class="buttimg" /></a> </div>
+                <div class="xtraButton" data-toggle="collapse" data-target=".notif"><img src="~/Images/notifbtn.jpg" class="buttimg" /></div>
+            </div>
+        </div>
+        <div class="EQLMSLogo Login">
+            <img src="~/Images/EQLMS_Logo.jpg" class="EQLogo" />
+        </div>
+        <div class="EQLMSLogo Lzy" style="display:none;">
+
+
+            <img src="~/Images/logo_ELMS.jpg" class="schoolLogo" />
+            <p class="navbar-brand fntttl Origtxt" style="height:42px !important;">Tungkong Mangga Elementary School</p>
+            <p class="navbar-brand fntttl shrttxt" style="height:42px !important;">TMES</p>
+        </div>
+        <button type="button" id="Loginbtn" class="loginbtn" data-toggle="collapse" data-target=".loginform">Login</button>
+        <button type="button" id="Aboutbtn" class="loginbtn" data-toggle="collapse" data-target=".Aboutform">About</button>
+
+    </div>
+    <div class="NotifTab notif collapse">
+        <div class="notiftitle">Notification</div>
+        <p>No Notifications</p>
+    </div>
+    <div class="Login navbar navbar-inverse navbar-fixed-top">
+        <div class="container ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="~/Images/logo_ELMS.jpg" class="schoolLogo" />
+                <p class="navbar-brand fntttl Origtxt">Tungkong Mangga Elementary School</p>
+                <p class="navbar-brand fntttl shrttxt">TMES</p>
+                
+                @if (Session["ActiveName"] != null)
+                {
+                    <p class="navbar-brand fntttl">@Session["gradelvl"].ToString()</p>
+                }
+                else
+                {
+                    <p class="navbar-brand fntttl"></p>
+                }
+
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="lir LiS">@Html.ActionLink("Home", "StudentHome", "Home", new { area = "" }, null)</li>
+                    <li class="lir LiT">@Html.ActionLink("Home", "TeacherHome", "Home", new { area = "" }, null)</li>
+                    <li class="lir LiA">@Html.ActionLink("Home", "AdminHome", "Home", new { area = "" }, null)</li>
+                    <li class="lir LiR">@Html.ActionLink("Home", "RegistrarHome", "Home", new { area = "" }, null)</li>
+                    <li id="ablir" class="lir">@Html.ActionLink("About", "Index", "AboutPage", new { area = "" }, null)</li>
+                    <li class="lir">@Html.ActionLink("Logout", "Login", "Home", new { area = "" }, null)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container body-content">
+        @RenderBody()
+
+    </div>   
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/EQLMS_Java.js")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/Popups.js")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

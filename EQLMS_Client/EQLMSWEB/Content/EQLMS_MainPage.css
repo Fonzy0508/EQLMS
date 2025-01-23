@@ -1,0 +1,533 @@
+﻿/*FZY csscode*/
+/*navbars*/
+* {
+    font-family:Arial;
+}
+html {
+   
+}
+.navbar {
+    position:absolute !important;
+    top:55px !important;
+    background-color:#9DA2A7 !important;
+    color:black !important;
+    max-width:100%;
+    max-height:50px !important;
+    border:none !important;
+    z-index:7;
+}
+.schoolLogo {
+    width:40px;
+    height:40px;
+    border-radius:40px;
+    background-color:white;
+    margin:5px;
+    float:left;
+    border:0px;
+    background-size:cover;
+}
+.navbar-brand , a {
+    color:black !important;
+}
+.nav {
+  float:right;
+}
+.lir {
+    color: #27374D;
+    font-weight:bold;
+}
+.nav > li > a {
+    margin:0px 10px 15px 0px;
+    border-radius:4px;
+    background-color:#9DA2A7;
+    color: #27374D !important;
+}
+.nav > li > a:hover {
+    background-color: #77838D !important;
+}
+.EQLMSnav {
+    position: absolute !important;
+    top: 0px;
+    width: 100%;
+    height: 55px;
+    background-color: #27374D;
+}
+.eqlmsbuts {
+    float: right;
+    margin: 6px;
+}
+.nameacc {
+    float:right;
+    font-family:Arial;
+    font-size:13px;
+    color:white;
+    margin:10px 2px 5px 0px;
+}
+.profilebutton {
+    width: auto;
+    height: 40px;
+    background-color: #27374D;
+    max-height: 40px;
+}
+.profpic {
+    position:relative;
+    float:right;
+    margin:5px;
+    width: 34px;
+    height:34px;
+    border-radius:100px;
+    background-color:white;
+}
+.Search {
+    width: 100px;
+    height: 25px;
+    margin:0px;
+}
+.Searchbutton {
+    height:28px;
+    width:35px;
+   margin:0px;
+}
+.searchInput {
+    margin:15px 0px 15px 0px;
+    width:auto;
+}
+.addbutt {
+    float:right;
+    width:auto;
+    max-height: 25px;
+    margin:10px;
+    border-radius:30px;
+}
+.xtraButton {
+    width: 40px;
+    height: 40px;
+    background-color: #27374D;
+    border-radius: 10px;
+    float: right;
+}
+.buttimg{
+    width:28px;
+    height:28px;
+    margin:2px;
+    background-size:cover;
+}
+.EQLMSLogo {
+    width: auto;
+    height: auto;
+    background-color: #27374D;
+    float: left;
+    margin: 2px 5px 2px 20px;
+}
+.EQLogo {
+    width: 200px;
+    height:50px;
+    background-size:cover;
+}
+.EQLMSnav > .eqlmsbuts > .xtraButton > img:hover {
+    width: 34px;
+    height: 34px;
+    transition: 0.1s ease-in-out;
+}
+.buttimg:hover {
+    width: 34px;
+    height: 34px;
+    transition: 0.1s ease-in-out;
+}
+.EQLMSnav > .eqlmsbuts > .Searchbutton:hover {
+    border: 2px;
+}
+.EQLMSnav > .eqlmsbuts > .nameacc > a {
+    float: right;
+    font-family: Arial;
+    font-size: 13px !important;
+    color: white !important;
+    margin: 5px 2px 5px 0px;
+    text-decoration:none;
+}
+/*Body*/
+body {
+    background-color: #B2D5CF;
+}
+.body-content {
+    position:relative;
+    top:55px;
+    padding:10px;
+}
+.container {
+    width: 100% !important;
+}
+.consub {
+    float: left;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #8EB295;
+}
+.subpic {
+    float:left;
+    width:100%;
+    height: 210px;
+    background-color: #F7C581;
+    border-radius:10px;
+    padding:15px
+}
+.picsub {
+    width: 100%;
+    height: 180px;
+}
+.Subjects {
+    float:left;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding-top:10px;
+    background-color: #27374D;
+    border-radius: 10px;
+    color:white;
+    font-weight:bolder;
+}
+.sn {
+    padding-top:6px;
+    z-index:2;
+}
+.col-md-4 {
+    padding:0px;
+    width:230px;
+    margin: 5px 1px 10px 30px;
+    float:left;
+    cursor:pointer;
+}
+/*nav right*/
+.navright {
+    margin: 10px;
+    position: relative;
+    float: left;
+    height: 500px;
+    border-radius: 30PX;
+    box-sizing: border-box;
+    background-color: #27374D;
+}
+.RnavS {
+    float: left;
+    width: 100%;
+    background-color: #F7C581;
+    border-radius: 15px
+}
+.Rnavcont {
+    float:left;
+    width:100%;
+    height:60px;
+    margin:0px;
+}
+.Rnavcont > p {
+    float:left;
+    margin: 20px 0px 10px 5px;
+    font-weight:bold;
+}
+.assimg {
+    position:absolute;
+    width:50px;
+    height:50px;
+    background-color:red;
+    margin:5px;
+}
+.assh {
+    font-weight:bold;
+    color:white;
+}
+.adbutR {
+    margin: 10px;
+    float: right;
+    width: 20px;
+    height: 20px;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.todo {
+    height: 150px;
+}
+.addtit {
+    font-size:20px;
+    text-align:center;
+    font-weight:bolder
+}
+.accadd {
+    margin-top:20px;
+    height:150px;
+    cursor:pointer;
+}
+.accimg {
+    display:block;
+    width:110px;
+    height:110px;
+    margin:auto;
+}
+.body-content {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+.footUI {
+    position:fixed !important;
+    bottom:0 !important;
+    width:300px;
+    height:50px;
+    z-index:2;
+}
+.adminview {
+    display:none;
+}
+.teacherview {
+    display:none;
+}
+.studentview {
+    display:block;
+}
+.UIP {
+    display:none;
+    float:left;
+}
+/*login form*/
+.loginbtn {
+    width: 80px;
+    height: 40px;
+    background-color: #8EB295;
+    color: #27374D;
+    position: relative;
+    float: right;
+    margin: 7px;
+    padding: 7px 10px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display:none;
+}
+.formLi {
+    float: right;
+    position:relative;
+    height: auto;
+    background-color: transparent;
+    padding:5px;
+    z-index:9;
+}
+.fntttl {
+    font-weight:bold;
+    color:aliceblue !important;
+}
+.LIttl {
+    width: 100%;
+    height: 50px;
+    background-color: #27374D;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.formsL {
+    width: 100%;
+    height: 290px;
+    background-color: #F7C581;
+    padding:5px;
+    border-radius:10px;
+}
+.LIitem {
+    width: 100%;
+    position: relative;
+    top: 5px;
+    border-radius: 10px;
+    background-color: #F7C581;
+    color: #27374D;
+    border-bottom: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-top: 2px;
+    
+}
+.itemttl {
+    width: 39%;
+    float: left;
+    height: auto;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #27374D;
+    font-weight:bolder;
+    font-size: 15px;
+    border-radius: 10px;
+    margin:0px;
+}
+.ipt {
+    width: 60%;
+    height: auto;
+    float: left;
+}
+hr {
+    margin:5px !important;
+}
+.form-group {
+    width:100%;
+    height:40px;
+    display:block;
+    margin-bottom:10px;
+    margin-top:15px;
+}
+.LoginRN {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    display:block;
+    padding: 15px 35px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #8EB295;
+    color: #27374D;
+    border-radius: 10px;
+    text-align:center;
+    cursor:pointer;
+    border:0px solid transparent;
+}
+
+.Otheroptions {
+    width:100%;
+    height:20px;
+    margin:5px;
+}
+.OPdiv {
+    width:48%;
+    height:50px;
+    float:left !important;
+    padding:5px;
+}
+.Checkbox {
+    width:20%;
+    height:20px;
+    margin:5px;
+    float:left !important;
+}
+.OPfnt {
+    font-size: 10px;
+    font-weight: bolder;
+    color: #27374D;
+    padding:10px;
+    margin:8px 5px;
+    float:right;
+}
+.Slideholder {
+    width:100%;
+    padding:10px;
+    height:auto;
+    position:relative;
+    top:-50px;
+}
+.slidez {
+    width: 100%;
+    height: 625px;
+    position: relative;
+    left: 0;
+}
+.slides {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color:red;
+    border-radius: 0px !important;
+}
+
+.slideimg1 {
+    left: -2448px;
+    animation: slide1 20s infinite;
+    z-index: 7;
+}
+
+.slideimg2 {
+    left: -2448px;
+    transition: 3s ease;
+    animation: slide2 20s infinite;
+    z-index: 8;
+}
+
+.mainimg {
+    left: 0;
+}
+@keyframes slide1 {
+
+    34%, 100% {
+        left: 0;
+    }
+
+    0%, 33% {
+        left: -1448px;
+    }
+}
+
+@keyframes slide2 {
+
+    67%, 100% {
+        left: 0;
+    }
+
+    0%, 66% {
+        left: -1448px;
+    }
+}
+
+@keyframes DisN1 {
+    100% {
+        display: none;
+    }
+}
+.AddSelectbtn2 {
+    background-color: #27374D;
+    width: 187px;
+    height: 38px;
+    min-width: 153px;
+    float: right;
+    margin: 10px;
+    border-radius: 5px;
+}
+.AboutLoginCont {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 8;
+    overflow-x:scroll;
+}
+#ablir {
+    display: none;
+}
+.NotifTab {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 40px;
+    right: 218px;
+    background-color: #F7C581;
+    z-index: 8;
+    border: 1px solid black;
+    border-radius:10px;
+    border-top-right-radius:0px;
+    color:aliceblue;
+   
+}
+.notiftitle {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    padding:10px;
+    background-color: #27374D;
+}
+.linkbtn {
+    padding: 275px 186px 3px 10px;
+    color: #F7C581;
+}

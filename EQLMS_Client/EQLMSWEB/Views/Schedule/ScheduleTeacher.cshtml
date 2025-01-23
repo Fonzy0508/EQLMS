@@ -1,0 +1,84 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Schedule Teacher";
+}
+<div class="Schedules MBV-Maincont">
+    <div class="Days Monday MBV-S-Days">
+        <div class="DTitle"><p style="margin:5px 0px 0px 0px;">Monday</p></div>
+
+    </div>
+
+    <div class="Days Tuesday MBV-S-Days">
+        <div class="DTitle"><p style="margin:5px 0px 0px 0px;">Tuesday</p></div>
+
+    </div>
+
+    <div class="Days Wednesday MBV-S-Days">
+        <div class="DTitle"><p style="margin:5px 0px 0px 0px;">Wednesday</p></div>
+
+    </div>
+
+    <div class="Days Thursday MBV-S-Days">
+        <div class="DTitle"><p style="margin:5px 0px 0px 0px;">Thursday</p></div>
+
+    </div>
+
+    <div class="Days Friday MBV-S-Days">
+        <div class="DTitle"><p style="margin:5px 0px 0px 0px;">Friday</p></div>
+
+    </div>
+
+</div>
+<div class="rightnav MBV-RN">
+   <div class="DTitle">
+       <p style="margin:5px 0px 0px 0px;">Schedule</p>
+   </div>
+   <div class="makesched">
+       <div class="Select-Days">
+           <div class="Sdays">M</div>
+           <div class="Sdays">T</div>
+           <div class="Sdays">W</div>
+           <div class="Sdays">Th</div>
+           <div class="Sdays">F</div>
+       </div>
+       <div class="Schedttl-sml">Grade:</div>
+       <select class="SubjectSelect-sml" style="margin-right:2px;">
+           <option value="Kindergarten 1">K-1</option>
+           <option value="Kindergarten 2">K-2</option>
+           <option value="Grade 1">1</option>
+           <option value="Grade 2">2</option>
+           <option value="Grade 3">3</option>
+           <option value="Grade 4">4</option>
+           <option value="Grade 5">5</option>
+           <option value="Grade 6">6</option>
+       </select>
+       <div class="Schedttl-sml">Section:</div>
+       <select class="SubjectSelect-sml">
+           <option value="Section 1">S-1</option>
+           <option value="Section 2">S-2</option>
+       </select>
+       <div class="Schedttl">Subject: </div>
+       <div>
+           <select class="SubjectSelect">
+               <option value="Math">Math</option>
+               <option value="Science">Science</option>
+               <option value="English">English</option>
+               <option value="AP">AP</option>
+               <option value="ESP">ESP</option>
+               <option value="TLE">TLE</option>
+               <option value="Filipino">Filipino</option>
+               <option value="Computer">Computer</option>
+               <option value="MAPEH">MAPEH</option>
+           </select>
+       </div>
+       <div class="Schedttl">Teacher name:</div>
+       <div class="SubjectSelect" style="text-align:center; padding-top:5px;">Name here</div>
+
+       <div class="Schedttl">Description :</div>
+       <input type="text" class="SubjectSelect" style="text-align:center; padding-top:5px;" />
+       <div class="Schedttl">Gmeet Link :</div>
+       <input type="url" class="SubjectSelect" style="text-align:center; padding-top:5px;" />
+       <div class="AddSched">Add Schedule</div>
+   </div>
+</div>
+

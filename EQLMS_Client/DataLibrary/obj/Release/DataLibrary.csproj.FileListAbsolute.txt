@@ -1,0 +1,9 @@
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\bin\Release\DataLibrary.dll
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\bin\Release\DataLibrary.pdb
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\bin\Release\Dapper.dll
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\bin\Release\Dapper.xml
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\obj\Release\DataLibrary.csprojAssemblyReference.cache
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\obj\Release\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\obj\Release\DataLibrary.csproj.CopyComplete
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\obj\Release\DataLibrary.dll
+C:\Users\ian puente\Desktop\EQLMS_ICT401\DataLibrary\obj\Release\DataLibrary.pdb

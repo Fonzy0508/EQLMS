@@ -1,0 +1,294 @@
+﻿.Schedules {
+    float: left;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    margin:10px;
+}
+.Days {
+    float:left;
+    height:300px;
+}
+.DTitle {
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #27374D;
+    color:aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.rightnav {
+    margin:10px;
+    position: relative;
+    float: left;
+    height:500px;
+    border-radius: 30PX;
+    box-sizing:border-box;
+}
+.makesched {
+    width: 100%;
+    padding: 10px;
+    height: 400px;
+    background-color: #27374D;
+    margin-top: 10px;
+    border-radius: 15px;
+    float: left;
+}
+.Select-Days {
+    width: 100%;
+    height: 50px;
+    background-color: #F7C581;
+    float: left;
+    border-radius: 15px;
+    margin-bottom:15px;
+}
+.Sdays {
+    float: left;
+    width: 20%;
+    padding: 13px 15px 15px 15px;
+    text-align: center;
+    font-size:20px;
+    font-weight:bold;
+    color: #27374D;
+    border-radius:15px;
+}
+.Sdays:hover {
+    background-color: #27374D;
+    color: #F7C581;
+}
+.Schedttl {
+    width: 28%;
+    margin:0px 5px 10px 0px;
+    height: 30px;
+    background-color: #F7C581;
+    float:left;
+    font-size:15px;
+    font-weight:bold;
+    padding:5px 5px 5px 5px;
+    text-align:center;
+    border-radius:5px;
+}
+.SubjectSelect {
+    width: 70%;
+    border:0px;
+    margin: 0px 0px 10px 0px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    background-color: #8EB295;
+    border-radius: 10px;
+}
+.NLr {
+    float:right;
+}
+.infohere {
+    margin-top:30px;
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    display:block;
+}
+.Schedttl-sml {
+    width: 28%;
+    margin: 0px 5px 10px 0px;
+    height: 30px;
+    background-color: #F7C581;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.SubjectSelect-sml {
+    width: 19%;
+    margin: 0px 0px 10px 0px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    background-color: #8EB295;
+    border-radius: 10px;
+}
+.AddSched {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    background-color: #F7C581;
+    padding-top: 8px;
+}
+.MBV-studentlist {
+    margin: 10px 0px 0px 0px;
+}
+.shrttxt {
+    display: block;
+}
+.Origtxt {
+    display:none;
+}
+/*for mobile*/
+[class*="MBV-"] {
+    width: 100%;
+}
+.MBV-Maincont-2 {
+
+}
+.aboutsz {
+    height:1200px;
+}
+.AboutLcont {
+    top:-420px;
+}
+.MBV-modules {
+    margin-top: 5px;
+}
+.MBV-popups {
+    left:0px;
+    top:100px;
+}
+.MBV-divinfo {
+    margin: 0px;
+    margin-top:10px;
+}
+MBV-Slideholder {
+    height: 245px;
+}
+.PW {
+    margin-top: 70px;
+}
+.EM {
+    margin-top:50px !important;
+}
+@media only screen and (min-width: 568px) {
+    .PW {
+        margin-top: 0px;
+    }
+    .EM {
+        margin-top: 0px !important;
+    }
+}
+@media only screen and (min-width: 568px) {
+    .shrttxt {
+       display:none;
+   }
+   .Origtxt{
+       display:block;
+   }
+    MBV-Slideholder {
+        height: 300px;
+    }
+    .AboutLcont {
+        top:-380px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .MBV-loginform {
+       width:50%;
+    }
+    .MBV-contact {
+        width: 50%;
+    }
+    .MBV-modules {
+        margin-top: 0px;
+    }
+    .MBV-popups {
+        width:70%;
+        left:100px;
+    }
+    .MBV-divinfo {
+        width: 250px;
+        margin: 0px 0px 10px 70px;
+    }
+    MBV-Slideholder {
+        height: 400px;
+    }
+    .AboutLcont {
+        top:-280px;
+    }
+}
+@media only screen and (min-width: 840px) {
+    /* For desktop: */
+    .MBV-Maincont {
+        width: 100%;
+    }
+    .MBV-RN {
+        width: 55%;
+        margin: 10px 10px 10px 205px;
+    }
+    .MBV-item {
+        width: 24%;
+    }
+    .MBV-loginform {
+        width: 40%;
+    }
+    /*for the schedule day div*/
+    .MBV-S-Days {
+        width: 19%;
+        margin: 4px;
+    }
+    .MBV-modules {
+        width:49.4%;
+        margin-left:5px;
+    }
+    .MBV-Aboutimg {
+        width:40%;
+    }
+    .MBV-Abouttxt {
+        width: 58%;
+    }
+    .aboutsz {
+        height: 800px;
+    }
+    .MBV-popups {
+        left:200px;
+        top:120px;
+    }
+    .MBV-acclist {
+        width: 48%;
+        margin: 0px 0px 10px 10px;
+    }
+    .AboutLcont{
+        top:-150px;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .MBV-studentlist {
+        width: 48.5%;
+        margin: 10px 0px 0px 10px;
+    }
+    MBV-Slideholder {
+        height: 505px;
+    }
+    .AboutLcont {
+        top:0px
+    }
+}
+@media only screen and (min-width: 1227px) {
+    /* For desktop: */
+    .MBV-Maincont {
+        width: 73%;
+    }
+    .MBV-RN {
+    width: 25%;
+    margin: 15px 0px 10px 0px;
+    }
+    .MBV-loginform {
+        width: 34%;
+    }
+    .MBV-Slide {
+        width:100%;
+    }
+    MBV-Slideholder {
+        height: 705px;
+    }
+}
