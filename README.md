@@ -1,31 +1,37 @@
-# **EQLMS – Efficient Quality Learning Management System**
+# **EQLMS – Efficient Quality Learning Management System** 📚
 
-A robust Learning Management System (LMS) designed specifically for **elementary education** to simplify the distribution of learning modules, streamline course tracking, and monitor student progress. Developed using the **.NET Framework**, **MVC architecture**, and **MySQL**, EQLMS empowers educators and learners with a user-friendly and scalable platform.
+EQLMS is a streamlined Learning Management System designed specifically for elementary education. It enables efficient module distribution, course management, and student progress tracking, leveraging .NET Framework, MVC architecture, and MySQL for a scalable and user-friendly experience. 🚀
 
----
-
-## **Features**
-
-- **Module Distribution**: Seamlessly upload, manage, and distribute learning modules to students.
-- **Course Management**: Organize and manage courses with an intuitive interface.
-- **Student Progress Tracking**: Monitor grades, assignments, and attendance effortlessly.
-- **User Roles**: Support for administrators, teachers, and students with tailored dashboards.
-- **Data Security**: Built-in data validation and secure MySQL database integration.
-- **Scalable Architecture**: Designed specifically for elementary institutions using MVC principles.
+Additional project documentation, including dataflows and database designs, is available in the **`/docs`** folder of the repository. 📄
 
 ---
 
-## **Technologies Used**
+## **Features** 🌟
 
-- **Framework**: .NET Framework
-- **Architecture**: MVC (Model-View-Controller)
-- **Database**: MySQL
-- **Front-End**: HTML, CSS, Bootstrap for responsive UI
+- Distribute learning modules seamlessly to students. 🎓
+- Manage courses, grades, and attendance with ease. 📝
+- Role-based dashboards for administrators, teachers, and students. 👩‍🏫👨‍🏫
+- Secure and scalable system designed for elementary institutions. 🔒
+
+---
+
+## **Technologies** ⚙️
+
+- **Framework**: .NET Framework  
+- **Database**: MySQL  
+- **Architecture**: MVC  
+- **Front-End**: HTML, CSS, Bootstrap  
 - **Back-End**: C#
 
 ---
 
-## **Installation**
+## **Documentation** 📚
+
+Project documentation, including dataflows and database designs, is available in the **`/docs`** folder.
+
+---
+
+## **Usage** 🛠️
 
 1. Clone the repository:
    ```bash
