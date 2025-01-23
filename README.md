@@ -1,4 +1,4 @@
-# **EQLMS(2021) – Efficient Quality Learning Management System** 📚
+# **EQLMS(2021) – Easy and Quick Learning Management System** 📚
 
 EQLMS is a streamlined Learning Management System designed specifically for elementary education. It enables efficient module distribution, course management, and student progress tracking, leveraging .NET Framework, MVC architecture, and MySQL for a scalable and user-friendly experience. 🚀
 
@@ -35,4 +35,4 @@ Project documentation, including dataflows and database designs, is available in
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/EQLMS.git
+   git clone [https://github.com/yourusername/EQLMS.git](https://github.com/Fonzy0508/EQLMS.git)
