@@ -18,9 +18,9 @@ Additional project documentation, including dataflows and database designs, is a
 ## **Technologies** ⚙️
 
 - **Framework**: .NET Framework  
-- **Database**: MySQL  
+- **Database**: SQL SERVER  
 - **Architecture**: MVC  
-- **Front-End**: HTML, CSS, Bootstrap  
+- **Front-End**: HTML, CSS  
 - **Back-End**: C#
 
 ---
